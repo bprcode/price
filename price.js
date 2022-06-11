@@ -30,3 +30,9 @@ spend = function(amount=0, spendingLimit=50, history=[]){
             }
     }
   }
+
+function run(spendingLimit = 200){
+    spend(0, spendingLimit)
+    console.log('Closest to $' + spendingLimit + ' was $' + best)
+    console.log(bestHistory)
+}
